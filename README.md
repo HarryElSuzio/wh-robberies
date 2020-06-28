@@ -25,6 +25,7 @@ I will try and be as active as I can on the FiveM forum however you may get a fa
 
 ## Credits
 @Danny3 for the outlaw alert.
+
 @MrFrk for the safe cracking.
 
 # Enjoy!
