@@ -52,6 +52,7 @@ Config.SafeLocations = {
 	[1] = {x = 2672.76,   y = 3286.61,  z = 54.24, name = "24/7 Senora Fwy - 957", cam = 15, lastRobbed = 0},
 	[2] = {x = 1734.9,   y = 6420.86,  z = 34.04, name = "Paleto 24/7 - 3030", cam = 18, lastRobbed = 0},
 	[3] = {x = 1159.22,   y = -314.0,  z = 68.21, name = "LTD Mirror Park - 411", cam = 5, lastRobbed = 0}
+}
 
 Config.VaultLocations = {
 	[1] = {x = 253.8,   y = 228.26,  z = 100.68, name = "Pacific Standard Vault - 575", cam = 25, lastRobbed = 0} --This one requires an extra camera if you are using them: '[25] =  { ['x'] = 252.41,['y'] = 225.44,['z'] = 102.88,['h'] = 289.79, ['info'] = ' Cam PS Vault' },'
