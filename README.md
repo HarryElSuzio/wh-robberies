@@ -1,7 +1,7 @@
 # WH-Robberies
 
 **Dependencies:**
-[Mythic_Notify](https://github.com/JayMontana36/mythic_notify) (The script is configured to this version however could be easily be changed if you know what to do)
+[Mythic_Notify](https://github.com/JayMontana36/mythic_notify) (The script is configured to this version however could easily be changed if you know what to do)
 
 [WH-outlawalert](https://github.com/WindiestHook381/wh_outlawalert) 
 
