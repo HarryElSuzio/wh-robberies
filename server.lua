@@ -37,34 +37,34 @@ AddEventHandler('wh-robberies:cops', function(robtype, store)
 	if robtype == "cashreg" then
 		if cops >= Config.CashRegCops then
 			if (os.time() - locationLastRobbed.lastRobbed) < Config.CashRegCooldown and locationLastRobbed.lastRobbed ~= 0 then 
-				TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'This has already been robbed, nothing left!'})
+				TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'error', text = 'This has already been robbed, nothing left!'})
 			else
 				TriggerClientEvent('wh-robberies:cashregrob', source)
 			end
 		else
-			TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Not Enough Cops!'})
+			TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'error', text = 'Not Enough Cops!'})
 		end
 
 	elseif robtype == "safe" then
 		if cops >= Config.SafeCops then
 			if (os.time() - locationLastRobbed.lastRobbed) < Config.SafeCooldown and locationLastRobbed.lastRobbed ~= 0 then 
-				TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'This has already been robbed, nothing left!'})
+				TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'error', text = 'This has already been robbed, nothing left!'})
 			else
 				TriggerClientEvent('wh-robberies:saferob', source)
 			end
 		else
-			TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Not Enough Cops!'})
+			TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'error', text = 'Not Enough Cops!'})
 		end
 
 	elseif robtype == "vault" then
 		if cops >= Config.VaultCops then
 			if (os.time() - locationLastRobbed.lastRobbed) < Config.VaultCooldown and locationLastRobbed.lastRobbed ~= 0 then 
-				TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'This has already been robbed, nothing left!'})
+				TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'error', text = 'This has already been robbed, nothing left!'})
 			else
 				TriggerClientEvent('wh-robberies:vaultrob', source)
 			end
 		else
-			TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Not Enough Cops!'})
+			TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'error', text = 'Not Enough Cops!'})
 		end
 	end
 end)
