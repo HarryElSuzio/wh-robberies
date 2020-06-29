@@ -29,7 +29,7 @@ If you like my work then you could always support my coffee addiction and keep m
 <a href="https://www.buymeacoffee.com/windiesthook381" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
 ## Support
-I will try and be as active as I can on the FiveM forum however you may get a faster response in my discord or get help from any other developers around https://discord.gg/rJ3cb8n. I will also post all my releases and updates for any scripts there.
+I will try and be as active as I can on the FiveM forum however you may get a faster response in my discord or get help from any other developers around https://discord.gg/VXJz2Yw. I will also post all my releases and updates for any scripts there.
 
 ## Credits
 @Danny3 for the outlaw alert.
