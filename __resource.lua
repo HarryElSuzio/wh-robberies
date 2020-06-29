@@ -13,5 +13,5 @@ server_script {
 
 dependencies {
 	'mythic_notify',
-	'esx_policejob'
+	'wh_outlawalert'
 }
