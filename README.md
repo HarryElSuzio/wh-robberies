@@ -24,7 +24,7 @@ Hopefully this explains it better, I can make a video tutorial if you think it w
 
 29/06/2020 - Fixed issue with files, the script now works xD
 
-03/07/2020 - README updated
+03/07/2020 - README updated and changed controlling of minigame.
 
 **Other Notes**
 
