@@ -8,15 +8,25 @@
 **Description**
 This is a script I have made to utilise [pd-safe](https://forum.cfx.re/t/release-pd-safe-standalone-lua-safecracking-minigame/1231799) by [MrFrk](https://forum.cfx.re/u/mrfrk/summary). The idea of it is to replace esxholdup with a more interactive method however doesn't conflict with anything in it if you want to use both for whatever reason. It enables you to add spots to the map (Three different types, CashRegister, Safe and Vault) each of them have different random rewards (Which can be configured in config), different cooldowns (Which can be conifgured in config) and different amount of 'pins' to crack (Which can't be configured in config but is easy enough to change). This also currently gives you two ways of notifying police with the requires alerts: Straight up name and location or send an alert saying a camera has been triggered (configured for st-cctv but this is not required as it is a script that has to be purchased) which you can choose from. The script conatins 3 stores each with 2 cash registers and a safe in the backroom. The pacific standard vault is also in there by default too.
 
-The minigame is directional so it starts by you having to go right (D) first as you can only hear the sound of the correct position going that way round. Then the other way (A) and keeps alternating depending on how many locks you have)
+To add more cash registers/safes/vaults just add them into the *server.cfg*
+
 
 (I have included the safe cracking minigame file in this resource for ease of download, I take zero credit for this, as said in a separate readme)
+
+## How the cracking game works
+When the minigame has started you first need to use the **D** key to go that one way until you hear the different *clicking* sound. When you are on that mark press **W** and the top padlock on th right of the dial will show as unlocked. Now you need to go the other way using **A** and again, when you are on the mark use **W** to select. Depending on how many padlocks you repeat this use W first then S, W, S, W, S get the drift? Cool. It is ESSENTIAL that you go over the mark the correct direction at the time else you will NOT hear the different sound. 
+
+Hopefully this explains it better, I can make a video tutorial if you think it would help and be easier than instructions :)
 
 --
 
 **Changelog**
 
 29/06/2020 - Fixed issue with files, the script now works xD
+
+03/07/2020 - README updated
+
+**Other Notes**
 
 The cooldown system has been bodged really. It works but not how I would want it to so may come back to it and re do the whole thing now I know what needs to happen and where.
 Might add an option so instead of the 3D text to use a specific configurable item nearby to start 'cracking'.
