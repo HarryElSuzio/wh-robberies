@@ -14,7 +14,7 @@ To add more cash registers/safes/vaults just add them into the *server.cfg*
 (I have included the safe cracking minigame file in this resource for ease of download, I take zero credit for this, as said in a separate readme)
 
 ## How the cracking game works
-When the minigame has started you first need to use the **D** key to go that one way until you hear the different *clicking* sound. When you are on that mark press **W** and the top padlock on th right of the dial will show as unlocked. Now you need to go the other way using **A** and again, when you are on the mark use **W** to select. Depending on how many padlocks you repeat this use W first then S, W, S, W, S get the drift? Cool. It is ESSENTIAL that you go over the mark the correct direction at the time else you will NOT hear the different sound. 
+Use **A** and **D** to move side to side, **W** to select current position and **S** to cancel.
 
 Hopefully this explains it better, I can make a video tutorial if you think it would help and be easier than instructions :)
 
