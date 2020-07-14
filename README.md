@@ -26,6 +26,8 @@ Hopefully this explains it better, I can make a video tutorial if you think it w
 
 03/07/2020 - README updated an changed the way of controlling minigame.
 
+14/07/2020 - Changed how people get paid removing vulnerabilities by adding checks to see whether they actually have played the minigame. (This means the events can't be exploited!)
+
 **Other Notes**
 
 The cooldown system has been bodged really. It works but not how I would want it to so may come back to it and re do the whole thing now I know what needs to happen and where.
