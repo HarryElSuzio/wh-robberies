@@ -10,6 +10,20 @@ AddEventHandler('wh-robberies:ReceiveMonies', function(amount)
 	xPlayer.addMoney(amount)
 end)
 
+RegisterServerEvent('wh-robberies:ReceiveMonies')
+AddEventHandler('wh-robberies:ReceiveMonies', function(check)
+	local _source = source
+	local xPlayer = ESX.GetPlayerFromId(_source)
+
+	if check == true then
+		local amount = math.random(Config.CashRegMin,Config.CashRegMax)
+		xPlayer.addMoney(amount)
+		TriggerClientEvent('mythic_notify:client:DoHudText', source, { type = 'success', text = 'Completed! You recieved $' .. amount})
+	end
+	
+end)
+
+
 RegisterServerEvent('wh-robberies:cops', robtype, store)
 AddEventHandler('wh-robberies:cops', function(robtype, store)
 	local _source = source

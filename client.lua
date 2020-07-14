@@ -125,7 +125,7 @@ Citizen.CreateThread(function()
 end)
 
 
-RegisterNetEvent('wh-robberies:cashregrob')
+--[[RegisterNetEvent('wh-robberies:cashregrob')
 AddEventHandler('wh-robberies:cashregrob', function()
 	player = GetPlayerPed(-1)
     coords = GetEntityCoords(player)
@@ -141,7 +141,7 @@ AddEventHandler('wh-robberies:cashregrob', function()
 	local res = exports['wh-robberies']:createSafe({math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99)})
 	if res == true then
 		local amount = math.random(Config.CashRegMin,Config.CashRegMax)
-		print(amount)
+		--print(amount)
 		Citizen.Wait(100)
 		local player = GetPlayerFromServerId(source)
 		TriggerServerEvent('wh-robberies:ReceiveMonies', amount)
@@ -154,7 +154,35 @@ AddEventHandler('wh-robberies:cashregrob', function()
 	else
 		exports['mythic_notify']:DoHudText('error', 'Cracking Failed')
 	end
+end)]]--
+
+
+RegisterNetEvent('wh-robberies:cashregrob')
+AddEventHandler('wh-robberies:cashregrob', function()
+	player = GetPlayerPed(-1)
+    coords = GetEntityCoords(player)
+	if Config.NotifyPolice then
+		if Config.Cameras then
+			TriggerServerEvent('esx_outlawalert:cameraTriggered', camera, robbinglocation)
+		else
+			TriggerServerEvent('esx_outlawalert:storeRobbery', robbinglocation)
+		end
+	end
+	exports['mythic_notify']:DoCustomHudText('inform', 'A and D to move. W to accept, S to cancel', 7000)
+	--Citizen.Wait(200)
+	local res = exports['wh-robberies']:createSafe({math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99)})
+	if res == true then
+		local player = GetPlayerFromServerId(source)
+		TriggerServerEvent('wh-robberies:ReceiveMonies', res)
+
+		if Config.EnableCooldown then
+			TriggerServerEvent('wh-robberies:completed', robbinglocation2)
+		end
+	else
+		exports['mythic_notify']:DoHudText('error', 'Cracking Failed')
+	end
 end)
+
 
 RegisterNetEvent('wh-robberies:saferob')
 AddEventHandler('wh-robberies:saferob', function()
