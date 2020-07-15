@@ -1,15 +1,3 @@
-ESX = nil
-
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
-RegisterServerEvent('wh-robberies:ReceiveMonies')
-AddEventHandler('wh-robberies:ReceiveMonies', function(amount)
-	local _source = source
-	local xPlayer = ESX.GetPlayerFromId(_source)
-	
-	xPlayer.addMoney(amount)
-end)
-
 RegisterServerEvent('wh-robberies:ReceiveMonies')
 AddEventHandler('wh-robberies:ReceiveMonies', function(check)
 	local _source = source

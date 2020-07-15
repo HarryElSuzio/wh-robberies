@@ -197,13 +197,8 @@ AddEventHandler('wh-robberies:saferob', function()
 	--Citizen.Wait(200)
 	local res = exports['wh-robberies']:createSafe({math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99)})
 	if res == true then
-		local amount = math.random(Config.SafeMin,Config.SafeMax)
-		print(amount)
-		Citizen.Wait(100)
 		local player = GetPlayerFromServerId(source)
-		TriggerServerEvent('wh-robberies:ReceiveMonies', amount)
-		tostring(amount)
-		exports['mythic_notify']:DoHudText('success', 'Completed! You recieved $' .. amount)
+		TriggerServerEvent('wh-robberies:ReceiveMonies', res)
 
 		if Config.EnableCooldown then
 			TriggerServerEvent('wh-robberies:completed', robbinglocation2)
@@ -226,13 +221,8 @@ AddEventHandler('wh-robberies:vaultrob', function()
 	--Citizen.Wait(200)
 	local res = exports['wh-robberies']:createSafe({math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99),math.random(0,99)})
 	if res == true then
-		local amount = math.random(Config.VaultMin,Config.VaultMax)
-		print(amount)
-		Citizen.Wait(100)
 		local player = GetPlayerFromServerId(source)
-		TriggerServerEvent('wh-robberies:ReceiveMonies', amount)
-		tostring(amount)
-		exports['mythic_notify']:DoHudText('success', 'Completed! You recieved $' .. amount)
+		TriggerServerEvent('wh-robberies:ReceiveMonies', res)
 
 		if Config.EnableCooldown then
 			TriggerServerEvent('wh-robberies:completed', robbinglocation2)
