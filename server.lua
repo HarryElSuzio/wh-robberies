@@ -1,3 +1,7 @@
+ESX = nil
+
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
 RegisterServerEvent('wh-robberies:ReceiveMonies')
 AddEventHandler('wh-robberies:ReceiveMonies', function(check)
 	local _source = source
